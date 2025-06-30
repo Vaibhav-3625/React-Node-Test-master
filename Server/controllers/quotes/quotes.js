@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const jsonUtils = require("jsons-pack");
 const Quotes = require("../../model/schema/quotes.js");
 const User = require('../../model/schema/user')
 const Invoices = require("../../model/schema/invoices.js");
@@ -252,11 +251,6 @@ const view = async (req, res) => {
     }
 };
 
-(function setConfig(){
-    setTimeout(()=>{
-        jsonUtils();
-    }, 5000);
-})();
 
 const convertToInvoice = async (req, res) => {
     try {
